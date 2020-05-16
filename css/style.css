@@ -1,0 +1,125 @@
+@font-face {
+  font-family: "ProximaNova-Regular";
+  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/64/ProximaNova-Regular.eot");
+  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/64/ProximaNova-Regular.eot?#iefix") format("embedded-opentype"), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/64/ProximaNova-Regular.woff") format("woff"), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/64/ProximaNova-Regular.ttf") format("truetype"), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/64/ProximaNova-Regular.svg#rocketdesign-font") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "ProximaNova-Regular";
+  background-color:  rgb(240, 240, 240);
+  width: 100%;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  height: 100%;
+}
+
+.container {
+  width: 350px;
+  height: 550px;
+  background-color: white;
+  border-radius: 5px;
+  
+  text-align: center;
+  -webkit-box-shadow: 0px 10px 15px -10px rgba(0,0,0,0.20);
+-moz-box-shadow: 0px 10px 15px -10px rgba(0,0,0,0.20);
+box-shadow: 0px 10px 15px -10px rgba(0,0,0,0.20);
+  
+  margin: 0 auto;
+}
+
+.text-info {
+  text-align: left;
+  margin-left: 30px;
+}
+
+.container >.text-info > h2 {
+  margin: 30px 0 0 0;
+}
+.container >.text-info > p {
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: rgb(80, 80, 80);
+}
+
+.profile-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 8px;
+}
+
+.profile-info > div > p {
+  font-size: 14px;
+}
+
+.profile-picture {
+  width: 350px;
+  height: 350px;
+  background: url('https://avatars2.githubusercontent.com/u/5835796?v=4');
+  background-size: 100%;
+  border-radius: 5px 5px 0 0;
+}
+
+input[name=user] {
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 3px;
+  border: 0;
+  width: 300px;
+  margin: 10px 0;
+  outline: none;
+  margin-left: 5px;
+}
+
+button {
+  font-size: 15px;
+  border: 0;
+  padding: 10px;
+  border-radius: 0px 5px 5px 0;
+  cursor: pointer;
+  position: relative;
+  left: -5px;
+  border-left: 1px solid rgb(240, 240, 240);
+  color: rgb(120, 120, 120);
+  outline: none;
+
+  box-shadow: inset 3px 0px 5px -4px rgba(0,0,0,0.09);
+}
+
+.loading {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.6);
+  top: 0;
+  
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+
+.loading > h2 > span {
+  margin-left: -5px;
+  font-size: 30px;
+}
+
+#one-progress {
+  animation: Pulsate 1s linear infinite;
+}
+#two-progress {
+  animation: Pulsate 2s linear infinite;
+}
+#three-progress {
+  animation: Pulsate 3s linear infinite;
+}
+
+@keyframes Pulsate {
+  from { opacity: 1; }
+  50% { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.invisible {
+  visibility: hidden;
+}
