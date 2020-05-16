@@ -1,0 +1,42 @@
+<script src="js/script.js"></script>
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+
+<!-- Ainda se usa <Center> ? -->
+<center>
+  <input type="text" placeholder="Your Username" name="user" />
+  <button type="submit" onclick="getInfo()">
+    <i class="fas fa-search"></i>
+  </button>
+</center>
+
+<div class="container">
+  <div class="profile-picture">
+  </div>
+  <div class="text-info">
+    <h2> João Victor Sant'ana </h2>
+    <p> @VictorPubh </p>
+  </div>
+  <div class="profile-info">
+    <div class="followers">
+      <p> Seguidores </p>
+      <span> 458 </span>
+    </div>
+    <div class="following">
+      <p> Seguindo </p>
+      <span> 1.027 </span>
+    </div>
+    <div class="repos">
+      <p> Repositórios </p>
+      <span> 12 </span>
+    </div>
+  </div>
+</div>
+
+<div class="loading invisible">
+  <h2> Carregando
+    <span id="one-progress">.</span>
+    <span id="two-progress">.</span>
+    <span id="three-progress">.</span>
+  </h2>
+</div>
