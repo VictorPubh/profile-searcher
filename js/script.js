@@ -28,7 +28,7 @@ function getInfo(username){
     .then((response) => {
       console.log(response)
       
-      // Time to show loading screen lol
+      // Time to show loading screen
       setTimeout(() => {
         loading.classList.add('invisible')
       }, 500)
@@ -38,7 +38,6 @@ function getInfo(username){
     .catch((error) => {
       console.log(error)
     
-      // Time to show loading screen lol
       setTimeout(() => {
         loading.classList.add('invisible')
       }, 500)
@@ -61,6 +60,9 @@ function createProfile(response){
   
   var following = document.querySelector('.following > span')
   following.innerHTML = response.following
+  
+  var repos = document.querySelector('.repos > span')
+  repos.innerHTML = response.public_repos
 }
 
 // Default Profile
